@@ -28,7 +28,7 @@ const Hero = () => {
             <Button variant="hero" size="lg" onClick={() => scrollToSection("programs")}>
               View Programs
             </Button>
-            <Button variant="outline" size="lg" onClick={() => scrollToSection("contact")} className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button variant="hero" size="lg" onClick={() => scrollToSection("contact")}>
               Contact Us
             </Button>
           </div>

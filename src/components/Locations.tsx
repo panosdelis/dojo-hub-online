@@ -17,13 +17,6 @@ const locations = [
     hours: "Mon-Fri: 5AM-9PM, Sat-Sun: 7AM-5PM",
     mapUrl: "https://www.google.com/maps/search/martial+arts+west+side",
   },
-  {
-    name: "North Campus",
-    address: "789 North Boulevard, University Area",
-    phone: "(555) 345-6789",
-    hours: "Mon-Fri: 6AM-11PM, Sat-Sun: 8AM-8PM",
-    mapUrl: "https://www.google.com/maps/search/martial+arts+university",
-  },
 ];
 
 const Locations = () => {
@@ -39,7 +32,7 @@ const Locations = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {locations.map((location, index) => (
             <Card 
               key={index}
