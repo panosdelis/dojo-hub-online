@@ -22,7 +22,7 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Martial Arts Academy Logo" 
-              className="w-24 h-24 md:w-32 md:h-32 drop-shadow-2xl"
+              className="w-40 h-40 md:w-52 md:h-52 drop-shadow-2xl"
             />
           </div>
           
