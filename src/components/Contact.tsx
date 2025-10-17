@@ -90,7 +90,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button type="submit" variant="hero" className="w-full">
-                  Send Message
+                  Στείλτε μας μήνυμα
                 </Button>
               </form>
             </CardContent>
@@ -101,12 +101,12 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-card-foreground flex items-center gap-2">
                   <Mail className="w-5 h-5 text-primary" />
-                  Email Us
+                  Email
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:info@elitemartialarts.com" className="text-primary hover:underline">
-                  info@elitemartialarts.com
+                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary hover:underline">
+                  anaktisi.redemption@gmail.com
                 </a>
               </CardContent>
             </Card>
@@ -119,25 +119,12 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+15551234567" className="text-primary hover:underline">
-                  (555) 123-4567
+                <a href="tel:+306972033728" className="text-primary hover:underline">
+                  697 2033728
                 </a>
               </CardContent>
             </Card>
             
-            <Card className="bg-card border-border">
-              <CardHeader>
-                <CardTitle className="text-card-foreground flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  Visit Our Main Location
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-card-foreground/80">123 Main Street, Downtown</p>
-                <p className="text-muted-foreground mt-2">Mon-Fri: 6AM-10PM</p>
-                <p className="text-muted-foreground">Sat-Sun: 8AM-6PM</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
