@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Swords, Users, Trophy, Target, Zap, Heart } from "lucide-react";
 const programs = [{
   title: "Full Combat Self Defence",
-  description: "Traditional Japanese martial art focusing on strikes, kicks, and defensive techniques. Perfect for all ages.",
+  description: "Ένα συνδιαστικό πρόγραμμα με στοιχεία απο εφτά διαφορετικές πολεμικές τέχνες. Εκπαιδεύσου στην όρθια μάχη, στη μάχη εδάφους, προετοιμάσου ακόμα και για ένοπλη συμπλοκή για να μπορείς να προστατεύσεις τον εαυτό σου και τους γύρω σου σε κάθε περίπτωση.",
   icon: Swords
 }, {
   title: "F.C.S KALI",
