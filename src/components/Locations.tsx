@@ -4,18 +4,18 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 const locations = [
   {
-    name: "Redemption Action Club Χαλάνδρι",
-    address: "123 Main Street, Downtown",
-    phone: "(555) 123-4567",
-    hours: "Mon-Fri: 6AM-10PM, Sat-Sun: 8AM-6PM",
-    mapUrl: "https://www.google.com/maps/search/martial+arts+downtown",
+    name: "Redemption Action Club, Χαλάνδρι",
+    address: "Κολοκοτρώνη 9, Χαλάνδρι",
+    phone: "6972033728",
+    hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
+    mapUrl: "https://maps.app.goo.gl/3Bjz55rAg6YD7qF17",
   },
   {
-    name: "Redemption Martial Arts , Νέα Ιωνία",
-    address: "456 West Avenue, West District",
-    phone: "(555) 234-5678",
-    hours: "Mon-Fri: 5AM-9PM, Sat-Sun: 7AM-5PM",
-    mapUrl: "https://www.google.com/maps/search/martial+arts+west+side",
+    name: "Redemption Martial Arts, Νέα Ιωνία",
+    address: "Σπάρτης 84, Νέα Ιωνία",
+    phone: "6972033728",
+    hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
+    mapUrl: "https://maps.app.goo.gl/gkTQLVxQrvCp5Xb66",
   },
 ];
 
