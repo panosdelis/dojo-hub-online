@@ -10,7 +10,7 @@ const programs = [{
   icon: Target
 }, {
   title: "Mixed Martial Arts",
-  description: "Combination of various martial arts disciplines for comprehensive self-defense and competition training.",
+  description: "Ένα μαχητικό άθλημα πλήρους επαφής που επιτρέπει τη χρήση τόσο των χτυπημάτων όσο και των λαβών, είτε από όρθια θέση είτε από το έδαφος.",
   icon: Trophy
 }, {
   title: "Fight For Fitness",
