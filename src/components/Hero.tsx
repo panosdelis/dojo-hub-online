@@ -24,10 +24,10 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" onClick={() => scrollToSection("programs")}>
-              View Programs
+              Προγράμματα
             </Button>
             <Button variant="hero" size="lg" onClick={() => scrollToSection("contact")}>
-              Contact Us
+              Επικοινωνία
             </Button>
           </div>
         </div>
