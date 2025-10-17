@@ -6,14 +6,14 @@ const locations = [
   {
     name: "Redemption Action Club, Χαλάνδρι",
     address: "Κολοκοτρώνη 9, Χαλάνδρι",
-    phone: "6972033728",
+    phone: "697 2033728",
     hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
     mapUrl: "https://maps.app.goo.gl/3Bjz55rAg6YD7qF17",
   },
   {
     name: "Redemption Martial Arts, Νέα Ιωνία",
     address: "Σπάρτης 84, Νέα Ιωνία",
-    phone: "6972033728",
+    phone: "697 2033728",
     hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
     mapUrl: "https://maps.app.goo.gl/gkTQLVxQrvCp5Xb66",
   },
