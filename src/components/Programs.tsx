@@ -9,13 +9,13 @@ const programs = [{
   description: "Korean martial art known for dynamic kicks and fast-paced movements. Build strength and flexibility.",
   icon: Target
 }, {
-  title: "Fight For Fitness",
-  description: "Ground fighting and grappling techniques emphasizing leverage and technique over strength.",
-  icon: Users
-}, {
   title: "Mixed Martial Arts",
   description: "Combination of various martial arts disciplines for comprehensive self-defense and competition training.",
   icon: Trophy
+}, {
+  title: "Fight For Fitness",
+  description: "Ground fighting and grappling techniques emphasizing leverage and technique over strength.",
+  icon: Users
 }, {
   title: "Capoeira",
   description: "Brazilian martial art combining dance, acrobatics, and music with fluid movements and rhythmic flow.",
