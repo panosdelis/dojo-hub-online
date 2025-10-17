@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="animate-fade-in-up">
           <div className="flex items-center justify-center mb-6">
-            <img src={logo} alt="Martial Arts Academy Logo" className="w-52 h-52 md:w-52 md:h-52 drop-shadow-2xl" />
+            <img src={logo} alt="Martial Arts Academy Logo" className="w-52 h-52 md:w-60 md:h-60 drop-shadow-2xl" />
           </div>
           
           <h1 className="text-4xl md:text-6xl text-primary-foreground mb-4 font-bold lg:text-7xl">Redemption Martial Arts</h1>
