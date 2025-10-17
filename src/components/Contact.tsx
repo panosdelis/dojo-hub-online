@@ -32,18 +32,18 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Get in Touch
+            Επικοινωνήστε μαζί μας
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your martial arts journey? Contact us today for a free trial class
+            Κλειστέ τη θέση σας για μια δωρεάν δοκκιμαστική προπόνηση στο τμήμα της επιλογής σας.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle className="text-card-foreground">Send us a Message</CardTitle>
-              <CardDescription className="text-muted-foreground">Fill out the form and we'll get back to you within 24 hours</CardDescription>
+              <CardTitle className="text-card-foreground">Αποστολή πληροφοριών</CardTitle>
+              <CardDescription className="text-muted-foreground">Συμπληρώστε τα στοιχεία και θα επικοινωνήσουμε μαζι σας.</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -115,7 +115,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-card-foreground flex items-center gap-2">
                   <Phone className="w-5 h-5 text-primary" />
-                  Call Us
+                  Καλέστε μας
                 </CardTitle>
               </CardHeader>
               <CardContent>
