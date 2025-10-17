@@ -18,9 +18,7 @@ const Hero = () => {
             <img src={logo} alt="Martial Arts Academy Logo" className="w-40 h-40 md:w-52 md:h-52 drop-shadow-2xl" />
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4">
-            Elite Martial Arts Academy
-          </h1>
+          <h1 className="text-4xl md:text-6xl text-primary-foreground mb-4 font-bold lg:text-7xl">Redemption Martial Arts</h1>
           
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-bold md:text-2xl">Danger is Real, But Fear is A Choice</p>
           
