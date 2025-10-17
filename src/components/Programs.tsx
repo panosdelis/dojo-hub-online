@@ -6,7 +6,7 @@ const programs = [{
   icon: Swords
 }, {
   title: "F.C.S KALI",
-  description: "Korean martial art known for dynamic kicks and fast-paced movements. Build strength and flexibility.",
+  description: "Το Filipino Combat Systems είναι μια δυναμική απόλυτα πρακτική και ρεαλιστική μαχητική τέχνη που εξειδικεύεται κυρίως στην μάχιμη χρήση και εφαρμογή του μαχαιριού και του ραβδιού και στην άοπλη αντιμετώπισής τους.  Επίσης περιέχει πλήρης εκπαίδευση και στην άοπλη μάχη και απευθύνεται σε άντρες και γυναίκες αυστηρά άνω των 17 ετών.  Είναι μια τέχνη εύκολη στην εκμάθησή της, απόλυτα φυσική στην εκτέλεση των τεχνικών της και εντελώς ακίνδυνη στην εξάσκησή της.",
   icon: Target
 }, {
   title: "Mixed Martial Arts",
