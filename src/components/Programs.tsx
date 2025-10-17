@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Swords, Users, Trophy, Target } from "lucide-react";
+import { Swords, Users, Trophy, Target, Zap, Heart } from "lucide-react";
 const programs = [{
   title: "Full Combat Self Defence",
   description: "Traditional Japanese martial art focusing on strikes, kicks, and defensive techniques. Perfect for all ages.",
@@ -16,6 +16,14 @@ const programs = [{
   title: "Mixed Martial Arts",
   description: "Combination of various martial arts disciplines for comprehensive self-defense and competition training.",
   icon: Trophy
+}, {
+  title: "Capoeira",
+  description: "Brazilian martial art combining dance, acrobatics, and music with fluid movements and rhythmic flow.",
+  icon: Zap
+}, {
+  title: "Pilates",
+  description: "Low-impact exercise method focusing on core strength, flexibility, and body awareness for overall wellness.",
+  icon: Heart
 }];
 const Programs = () => {
   return <section id="programs" className="py-20 bg-background">
@@ -25,7 +33,7 @@ const Programs = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Βρες αυτό που σου ταιρίαζει και  γίνε η καλυτερη εκδοχή του εαυτού σου.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {programs.map((program, index) => <Card key={index} className="hover:shadow-[var(--shadow-elevated)] transition-all duration-300 hover:-translate-y-2 bg-card border-border" style={{
           animationDelay: `${index * 100}ms`
         }}>
