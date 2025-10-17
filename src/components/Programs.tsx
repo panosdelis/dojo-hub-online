@@ -1,25 +1,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Swords, Users, Trophy, Target } from "lucide-react";
 const programs = [{
-  title: "Karate",
+  title: "Full Combat Self Defence",
   description: "Traditional Japanese martial art focusing on strikes, kicks, and defensive techniques. Perfect for all ages.",
-  icon: Swords,
-  duration: "3x per week"
+  icon: Swords
 }, {
-  title: "Taekwondo",
+  title: "F.C.S KALI",
   description: "Korean martial art known for dynamic kicks and fast-paced movements. Build strength and flexibility.",
-  icon: Target,
-  duration: "2x per week"
+  icon: Target
 }, {
-  title: "Brazilian Jiu-Jitsu",
+  title: "Fight For Fitness",
   description: "Ground fighting and grappling techniques emphasizing leverage and technique over strength.",
-  icon: Users,
-  duration: "4x per week"
+  icon: Users
 }, {
   title: "Mixed Martial Arts",
   description: "Combination of various martial arts disciplines for comprehensive self-defense and competition training.",
-  icon: Trophy,
-  duration: "5x per week"
+  icon: Trophy
 }];
 const Programs = () => {
   return <section id="programs" className="py-20 bg-background">
@@ -38,7 +34,6 @@ const Programs = () => {
                   <program.icon className="w-6 h-6 text-primary" />
                 </div>
                 <CardTitle className="text-xl text-card-foreground">{program.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{program.duration}</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-card-foreground/80">{program.description}</p>
