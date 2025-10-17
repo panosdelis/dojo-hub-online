@@ -14,11 +14,11 @@ const programs = [{
   icon: Trophy
 }, {
   title: "Fight For Fitness",
-  description: "Ground fighting and grappling techniques emphasizing leverage and technique over strength.",
+  description: "Ένα αερόβιο πρόγραμμα εκγύμνασης εμπλουτισμένο με κινήσεις μέσα από τις πολεμικές τέχνες, πράγμα που προσδίδει ποικιλία και ένταση για να μη βαρεθείς ποτέ. Βασικός στόχος είναι βελτίωση της φυσικής κατάστασης, χάσιμο περιττών κιλών και η εκγύμναση ενώ ταυτόχρονα μαθαίνεις βασικές δεξιότητες αυτοάμυνας.",
   icon: Users
 }, {
   title: "Capoeira",
-  description: "Brazilian martial art combining dance, acrobatics, and music with fluid movements and rhythmic flow.",
+  description: "Μία παραδοσιακή βραζιλιάνικη πολεμική τέχνη, που συνδυάζει το χορό, τη μουσική και τη σωματική άσκηση, αλλά ο βασικός στόχος και η βαθύτερη φιλοσοφία της είναι το αίτημα της ελευθερίας",
   icon: Zap
 }, {
   title: "Pilates",
