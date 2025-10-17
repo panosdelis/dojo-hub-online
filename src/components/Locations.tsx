@@ -11,7 +11,7 @@ const locations = [
     mapUrl: "https://www.google.com/maps/search/martial+arts+downtown",
   },
   {
-    name: "West Side Training Center",
+    name: "Redemption Martial Arts , Νέα Ιωνία",
     address: "456 West Avenue, West District",
     phone: "(555) 234-5678",
     hours: "Mon-Fri: 5AM-9PM, Sat-Sun: 7AM-5PM",
