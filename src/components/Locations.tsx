@@ -37,7 +37,6 @@ const Locations = () => {
             >
               <CardHeader>
                 <CardTitle className="text-xl text-card-foreground">{location.name}</CardTitle>
-                // <CardDescription className="text-muted-foreground">State-of-the-art facility</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
