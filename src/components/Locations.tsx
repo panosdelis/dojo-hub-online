@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 const locations = [
   {
-    name: "Downtown Dojo",
+    name: "Redemption Action Club Χαλάνδρι",
     address: "123 Main Street, Downtown",
     phone: "(555) 123-4567",
     hours: "Mon-Fri: 6AM-10PM, Sat-Sun: 8AM-6PM",
