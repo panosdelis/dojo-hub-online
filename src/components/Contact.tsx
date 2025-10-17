@@ -32,7 +32,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Αποστολή πληροφοριών
+            Επικοινωνήστε μαζί μας
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Κλειστέ τη θέση σας για μια δωρεάν δοκκιμαστική προπόνηση στο τμήμα της επιλογής σας.
@@ -42,7 +42,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle className="text-card-foreground">Επικοινωνήστε μαζί μας</CardTitle>
+              <CardTitle className="text-card-foreground">Στείλτε μας μήνυμα </CardTitle>
               <CardDescription className="text-muted-foreground">Συμπληρώστε τα στοιχεία και θα επικοινωνήσουμε μαζι σας.</CardDescription>
             </CardHeader>
             <CardContent>
@@ -90,7 +90,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button type="submit" variant="hero" className="w-full">
-                  Στείλτε μας μήνυμα
+                  Αποστολή πληροφοριών
                 </Button>
               </form>
             </CardContent>
