@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Swords, Users, Trophy, Target, Zap, Heart } from "lucide-react";
 const programs = [{
   title: "Full Combat Self Defence",
-  description: "Ένα συνδιαστικό πρόγραμμα με στοιχεία απο εφτά διαφορετικές πολεμικές τέχνες. Εκπαιδεύσου στην όρθια μάχη, στη μάχη εδάφους, προετοιμάσου ακόμα και για ένοπλη συμπλοκή για να μπορείς να προστατεύσεις τον εαυτό σου και τους γύρω σου σε κάθε περίπτωση.",
+  description: "Ένα συνδιαστικό πρόγραμμα με στοιχεία απο οκτό διαφορετικές πολεμικές τέχνες. KUNG-FU, KICK BOXING, PANGRATIO, JIU JUSTU, KYOKUSHIN KARATE, MMA, F.C.S. KALI, SAVATE. Εκπαιδεύσου στην όρθια μάχη, στη μάχη εδάφους, προετοιμάσου ακόμα και για ένοπλη συμπλοκή για να μπορείς να προστατεύσεις τον εαυτό σου και τους γύρω σου σε κάθε περίπτωση.",
   icon: Target
 }, {
   title: "F.C.S KALI",
