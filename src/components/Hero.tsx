@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -13,52 +12,46 @@ const Hero = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 z-0 bg-[var(--gradient-hero)]" />
 
-      <div className="container mx-auto px-4 z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {/* Logo */}
-          <div className="flex items-center justify-center mb-8">
-            <img
-              src={logo}
-              alt="Redemption Martial Arts Academy logo"
-              className="w-64 md:w-80 h-auto drop-shadow-2xl object-contain"
-              loading="lazy"
-            />
-          </div>
+      <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
+        {/* Logo */}
+        <div className="flex items-center justify-center mb-8">
+          <img
+            src={logo}
+            alt="Redemption Martial Arts Academy logo"
+            className="w-64 md:w-80 h-auto drop-shadow-2xl object-contain"
+            loading="lazy"
+          />
+        </div>
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold">
-            Redemption Martial Arts
-          </h1>
+        {/* Title */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold">
+          Redemption Martial Arts
+        </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
-            Danger is Real, But Fear is A Choice
-          </p>
+        {/* Subtitle */}
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
+          Danger is Real, But Fear is A Choice
+        </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => scrollToSection("programs")}
-              className="hover:scale-105 transition-transform duration-300"
-            >
-              Προγράμματα
-            </Button>
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => scrollToSection("contact")}
-              className="hover:scale-105 transition-transform duration-300"
-            >
-              Επικοινωνία
-            </Button>
-          </div>
-        </motion.div>
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button
+            variant="hero"
+            size="lg"
+            onClick={() => scrollToSection("programs")}
+            className="hover:scale-105 transition-transform duration-300"
+          >
+            Προγράμματα
+          </Button>
+          <Button
+            variant="hero"
+            size="lg"
+            onClick={() => scrollToSection("contact")}
+            className="hover:scale-105 transition-transform duration-300"
+          >
+            Επικοινωνία
+          </Button>
+        </div>
       </div>
 
       {/* Bottom fade effect */}
