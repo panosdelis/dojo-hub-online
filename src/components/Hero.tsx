@@ -10,7 +10,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
       {/* Background gradient */}
-      <div className="absolute inset-0 z-0 bg-[var(--gradient-hero)]" />
+      <div className="absolute inset-0 z-0"
+        style={{background: "var(--gradient-hero)"}}
+        />
 
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
         {/* Logo */}
