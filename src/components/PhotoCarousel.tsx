@@ -8,15 +8,16 @@ import {
 import training1 from "@/assets/training1.jpg";
 import training2 from "@/assets/training2.jpg";
 import training3 from "@/assets/training3.jpg";
-import img1 from './images/1760878651216.jpg';
-import img2 from './images/1760878651244.jpg';
-import img3 from './images/1760879501078.jpg';
-import img4 from './images/1760879501114.jpg';
-import img5 from './images/1760879501236.jpg';
-import img6 from './images/1760879501280.jpg';
-import img7 from './images/1760879501371.jpg';
-import img8 from './images/1760879501406.jpg';
-import img9 from './images/1760879501451.jpg';
+import img1 from '@/assets/1760878651216.jpg';
+import img2 from '@/assets/1760878651244.jpg';
+import img3 from '@/assets/1760879501078.jpg';
+import img4 from '@/assets/1760879501114.jpg';
+import img5 from '@/assets/1760879501236.jpg';
+import img6 from '@/assets/1760879501280.jpg';
+import img7 from '@/assets/1760879501371.jpg';
+import img8 from '@/assets/1760879501406.jpg';
+import img9 from '@/assets/1760879501451.jpg';
+
 import Autoplay from "embla-carousel-autoplay";
 
 const photos = [
