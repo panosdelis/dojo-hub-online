@@ -8,51 +8,60 @@ import {
 import training1 from "@/assets/training1.jpg";
 import training2 from "@/assets/training2.jpg";
 import training3 from "@/assets/training3.jpg";
+import img1 from './images/1760878651216.jpg';
+import img2 from './images/1760878651244.jpg';
+import img3 from './images/1760879501078.jpg';
+import img4 from './images/1760879501114.jpg';
+import img5 from './images/1760879501236.jpg';
+import img6 from './images/1760879501280.jpg';
+import img7 from './images/1760879501371.jpg';
+import img8 from './images/1760879501406.jpg';
+import img9 from './images/1760879501451.jpg';
 import Autoplay from "embla-carousel-autoplay";
 
 const photos = [
   {
-    src: "/assets/1760878651216.jpg",
+    src: img1,
     alt: "Photo 1760878651216",
     caption: "Caption for 1760878651216"
   },
   {
-    src: "/assets/1760878651244.jpg",
+    src: img2,
     alt: "Photo 1760878651244",
     caption: "Caption for 1760878651244"
   },
   {
-    src: "/assets/1760879501078.jpg",
+    src: img3,
     alt: "Photo 1760879501078",
     caption: "Caption for 1760879501078"
   },
   {
-    src: "/assets/1760879501114.jpg",
+    src: img4,
     alt: "Photo 1760879501114",
     caption: "Caption for 1760879501114"
   },
   {
-    src: "/assets/1760879501236.jpg",
+    src: img5,
     alt: "Photo 1760879501236",
     caption: "Caption for 1760879501236"
   },
   {
-    src: "/assets/1760879501280.jpg",
+    src: img6,
     alt: "Photo 1760879501280",
     caption: "Caption for 1760879501280"
   },
   {
-    src: "/assets/1760879501371.jpg",
+    src: img7,
     alt: "Photo 1760879501371",
     caption: "Caption for 1760879501371"
   },
   {
-    src: "/assets/1760879501406.jpg",
+    src: img8,
     alt: "Photo 1760879501406",
     caption: "Caption for 1760879501406"
   },
   {
-    src: "/assets/1760879501451.jpg",
+    src: img9,
     alt: "Photo 1760879501451",
     caption: "Caption for 1760879501451"
   }
