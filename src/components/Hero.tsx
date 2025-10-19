@@ -1,39 +1,70 @@
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
+
 const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
+    element?.scrollIntoView({ behavior: "smooth" });
   };
-  return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0" style={{
-      background: "var(--gradient-hero)"
-    }} />
-      
+
+  return (
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
+      {/* Background gradient */}
+      <div className="absolute inset-0 z-0 bg-[var(--gradient-hero)]" />
+
       <div className="container mx-auto px-4 z-10 text-center">
-        <div className="animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6">
-            <img src={logo} alt="Martial Arts Academy Logo" className="w-52 h-52 md:w-52 md:h-52 drop-shadow-2xl" />
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          {/* Logo */}
+          <div className="flex items-center justify-center mb-8">
+            <img
+              src={logo}
+              alt="Redemption Martial Arts Academy logo"
+              className="w-64 md:w-80 h-auto drop-shadow-2xl object-contain"
+              loading="lazy"
+            />
           </div>
-          
-          <h1 className="text-4xl md:text-6xl text-primary-foreground mb-4 font-bold lg:text-7xl">Redemption Martial Arts</h1>
-          
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto font-bold md:text-2xl">Danger is Real, But Fear is A Choice</p>
-          
+
+          {/* Title */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold">
+            Redemption Martial Arts
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
+            Danger is Real, But Fear is A Choice
+          </p>
+
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" onClick={() => scrollToSection("programs")}>
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={() => scrollToSection("programs")}
+              className="hover:scale-105 transition-transform duration-300"
+            >
               Προγράμματα
             </Button>
-            <Button variant="hero" size="lg" onClick={() => scrollToSection("contact")}>
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={() => scrollToSection("contact")}
+              className="hover:scale-105 transition-transform duration-300"
+            >
               Επικοινωνία
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
-      
+
+      {/* Bottom fade effect */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
