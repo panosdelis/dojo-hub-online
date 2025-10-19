@@ -14,11 +14,28 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Thank you! We'll contact you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("https://formspree.io/f/mnngrddn", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      toast.success("Ευχαριστούμε! Θα επικοινωνήσουμε μαζί σας σύντομα.");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } else {
+      toast.error("Κάτι πήγε στραβά. Δοκιμάστε ξανά.");
+    }
+  } catch (error) {
+    toast.error("Σφάλμα κατά την αποστολή. Ελέγξτε τη σύνδεσή σας.");
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
