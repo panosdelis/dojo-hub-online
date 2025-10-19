@@ -12,47 +12,47 @@ import Autoplay from "embla-carousel-autoplay";
 
 const photos = [
   {
-    src: "/images/1760878651216.jpg",
+    src: "/assets/1760878651216.jpg",
     alt: "Photo 1760878651216",
     caption: "Caption for 1760878651216"
   },
   {
-    src: "/images/1760878651244.jpg",
+    src: "/assets/1760878651244.jpg",
     alt: "Photo 1760878651244",
     caption: "Caption for 1760878651244"
   },
   {
-    src: "/images/1760879501078.jpg",
+    src: "/assets/1760879501078.jpg",
     alt: "Photo 1760879501078",
     caption: "Caption for 1760879501078"
   },
   {
-    src: "/images/1760879501114.jpg",
+    src: "/assets/1760879501114.jpg",
     alt: "Photo 1760879501114",
     caption: "Caption for 1760879501114"
   },
   {
-    src: "/images/1760879501236.jpg",
+    src: "/assets/1760879501236.jpg",
     alt: "Photo 1760879501236",
     caption: "Caption for 1760879501236"
   },
   {
-    src: "/images/1760879501280.jpg",
+    src: "/assets/1760879501280.jpg",
     alt: "Photo 1760879501280",
     caption: "Caption for 1760879501280"
   },
   {
-    src: "/images/1760879501371.jpg",
+    src: "/assets/1760879501371.jpg",
     alt: "Photo 1760879501371",
     caption: "Caption for 1760879501371"
   },
   {
-    src: "/images/1760879501406.jpg",
+    src: "/assets/1760879501406.jpg",
     alt: "Photo 1760879501406",
     caption: "Caption for 1760879501406"
   },
   {
-    src: "/images/1760879501451.jpg",
+    src: "/assets/1760879501451.jpg",
     alt: "Photo 1760879501451",
     caption: "Caption for 1760879501451"
   }
