@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock } from "lucide-react";
+import training1 from "@/assets/training1.jpg";
+import training2 from "@/assets/training2.jpg";
 
 const locations = [
   {
@@ -9,6 +11,7 @@ const locations = [
     phone: "697 2033728",
     hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
     mapUrl: "https://maps.app.goo.gl/3Bjz55rAg6YD7qF17",
+    image: training1,
   },
   {
     name: "Redemption Martial Arts, Νέα Ιωνία",
@@ -16,6 +19,7 @@ const locations = [
     phone: "697 2033728",
     hours: "Mon-Fri: 5AM-10PM, Sat-Sun: Closed",
     mapUrl: "https://maps.app.goo.gl/gkTQLVxQrvCp5Xb66",
+    image: training2,
   },
 ];
 
@@ -39,6 +43,11 @@ const Locations = () => {
                 <CardTitle className="text-xl text-card-foreground">{location.name}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <img 
+                  src={location.image} 
+                  alt={location.name}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <p className="text-card-foreground/80">{location.address}</p>

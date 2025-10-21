@@ -102,11 +102,6 @@ const PhotoCarousel = () => {
                     alt={photo.alt}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-secondary/90 to-transparent p-6">
-                    <p className="text-2xl font-bold text-secondary-foreground">
-                      {photo.caption}
-                    </p>
-                  </div>
                 </div>
               </CarouselItem>
             ))}
