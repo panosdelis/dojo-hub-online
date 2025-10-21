@@ -1,8 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock } from "lucide-react";
-import training1 from "@/assets/training1.jpg";
-import training2 from "@/assets/training2.jpg";
+import training1 from "@/assets/Chalandri1760883339427.jpg";
+import training2 from "@/assets/NeaIonia1760883339500.jpg";
 
 const locations = [
   {
