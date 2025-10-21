@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, Users } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -122,7 +122,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary hover:underline">
+                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary font-semibold hover:underline">
                   anaktisi.redemption@gmail.com
                 </a>
               </CardContent>
@@ -136,9 +136,39 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+306972033728" className="text-primary hover:underline">
+                <a href="tel:+306972033728" className="text-primary font-semibold hover:underline">
                   697 2033728
                 </a>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground flex items-center gap-2">
+                  <Users className="w-5 h-5 text-primary" /> Social Media
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex gap-4">
+                  <a 
+                    href="https://www.instagram.com/redemption.actionclub/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:underline"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    <span><strong>Instagram</strong></span>
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=100035441212035" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:underline"
+                  >
+                    <Facebook className="w-5 h-5" />
+                    <span><strong>Facebook</strong></span>
+                  </a>
+                </div>
               </CardContent>
             </Card>
             

@@ -24,47 +24,38 @@ const photos = [
   {
     src: img1,
     alt: "Photo 1760878651216",
-    caption: "Caption for 1760878651216"
   },
   {
     src: img2,
     alt: "Photo 1760878651244",
-    caption: "Caption for 1760878651244"
   },
   {
     src: img3,
     alt: "Photo 1760879501078",
-    caption: "Caption for 1760879501078"
   },
   {
     src: img4,
     alt: "Photo 1760879501114",
-    caption: "Caption for 1760879501114"
   },
   {
     src: img5,
     alt: "Photo 1760879501236",
-    caption: "Caption for 1760879501236"
   },
   {
     src: img6,
     alt: "Photo 1760879501280",
-    caption: "Caption for 1760879501280"
   },
   {
     src: img7,
     alt: "Photo 1760879501371",
-    caption: "Caption for 1760879501371"
   },
   {
     src: img8,
     alt: "Photo 1760879501406",
-    caption: "Caption for 1760879501406"
   },
   {
     src: img9,
     alt: "Photo 1760879501451",
-    caption: "Caption for 1760879501451"
   }
 ];
 
@@ -111,11 +102,6 @@ const PhotoCarousel = () => {
                     alt={photo.alt}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-secondary/90 to-transparent p-6">
-                    <p className="text-2xl font-bold text-secondary-foreground">
-                      {photo.caption}
-                    </p>
-                  </div>
                 </div>
               </CarouselItem>
             ))}
