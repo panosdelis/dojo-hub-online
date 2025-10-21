@@ -122,7 +122,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary hover:underline">
+                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary font-semibold hover:underline">
                   anaktisi.redemption@gmail.com
                 </a>
               </CardContent>
@@ -136,7 +136,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+306972033728" className="text-primary hover:underline">
+                <a href="tel:+306972033728" className="text-primary font-semibold hover:underline">
                   697 2033728
                 </a>
               </CardContent>
