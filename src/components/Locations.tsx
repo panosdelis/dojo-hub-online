@@ -46,7 +46,7 @@ const Locations = () => {
                 <img 
                   src={location.image} 
                   alt={location.name}
-                  className="w-full h-56 object-cover rounded-lg"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
