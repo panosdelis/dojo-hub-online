@@ -1,7 +1,16 @@
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Swords, Users, Trophy, Target, Zap, Heart, Fist, ArmFlex } from "lucide-react";
+import { Swords, Users, Trophy, Target, Zap, Heart, Fist, ArmFlex, LucideIcon } from "lucide-react";
 
-const programs = [
+// TypeScript interface for program
+interface Program {
+  title: string;
+  description: string;
+  icon: LucideIcon; // ensures icon is a valid component
+}
+
+// Programs array
+const programs: Program[] = [
   {
     title: "Full Combat Self Defence",
     description:
@@ -40,7 +49,7 @@ const programs = [
   },
 ];
 
-const Programs = () => {
+const Programs: React.FC = () => {
   return (
     <section id="programs" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -57,7 +66,7 @@ const Programs = () => {
         {/* Program Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {programs.map((program, index) => {
-            const Icon = program.icon; // Capitalized variable
+            const Icon = program.icon; // Capitalized for TSX
             return (
               <Card
                 key={index}
