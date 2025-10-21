@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* Title */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold">
-          Redemption Martial Arts
+          Redemption<br /><br />Martial Arts
         </h1>
 
         {/* Subtitle */}
