@@ -4,7 +4,6 @@ import Locations from "@/components/Locations";
 import PhotoCarousel from "@/components/PhotoCarousel";
 import Contact from "@/components/Contact";
 
-import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 const Index = () => {
   return (
