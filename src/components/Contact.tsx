@@ -155,7 +155,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     className="flex items-center gap-2 text-primary hover:underline"
                   >
                     <Instagram className="w-5 h-5" />
-                    <span>Instagram</span>
+                    <span><strong>Instagram</strong></span>
                   </a>
                   <a 
                     href="https://www.facebook.com/profile.php?id=100035441212035" 
@@ -164,7 +164,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     className="flex items-center gap-2 text-primary hover:underline"
                   >
                     <Facebook className="w-5 h-5" />
-                    <span>Facebook</span>
+                    <span><strong>Facebook</strong></span>
                   </a>
                 </div>
               </CardContent>
