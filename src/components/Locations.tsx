@@ -50,24 +50,12 @@ const Locations = () => {
                 />
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <a 
-                    href={location.mapUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-card-foreground/80 hover:underline"
-                  >
-                    {location.address}
-                  </a>
+                  <p className="text-card-foreground/80">{location.address}</p>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <a 
-                    href={`tel:${location.phone.replace(/\s/g, '')}`}
-                    className="text-card-foreground/80 hover:underline"
-                  >
-                    {location.phone}
-                  </a>
+                  <p className="text-card-foreground/80">{location.phone}</p>
                 </div>
                 
                 <div className="flex items-start gap-3">
