@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Swords, Users, Trophy, Target, Zap, Heart } from "lucide-react";
+import { Swords, Users, Trophy, Target, HandMetal, Heart, Activity, Dumbbell } from "lucide-react";
 const programs = [{
   title: "Full Combat Self Defence",
   description: "Ένα συνδιαστικό πρόγραμμα με στοιχεία απο οκτώ διαφορετικές πολεμικές τέχνες. KUNG-FU, KICK BOXING, PANGRATIO, JIU JUSTU, KYOKUSHIN KARATE, MMA, F.C.S. KALI, SAVATE. Εκπαιδεύσου στην όρθια μάχη, στη μάχη εδάφους, προετοιμάσου ακόμα και για ένοπλη συμπλοκή για να μπορείς να προστατεύσεις τον εαυτό σου και τους γύρω σου σε κάθε περίπτωση.",
@@ -15,11 +15,11 @@ const programs = [{
 }, {
   title: "Fight For Fitness",
   description: "Ένα αερόβιο πρόγραμμα εκγύμνασης εμπλουτισμένο με κινήσεις μέσα από τις πολεμικές τέχνες, πράγμα που προσδίδει ποικιλία και ένταση για να μη βαρεθείς ποτέ. Βασικός στόχος είναι βελτίωση της φυσικής κατάστασης, χάσιμο περιττών κιλών και η εκγύμναση ενώ ταυτόχρονα μαθαίνεις βασικές δεξιότητες αυτοάμυνας.",
-  icon: Users
+  icon: Activity
 }, {
   title: "Capoeira",
   description: "Μία παραδοσιακή βραζιλιάνικη πολεμική τέχνη, που συνδυάζει το χορό, τη μουσική και τη σωματική άσκηση, αλλά ο βασικός στόχος και η βαθύτερη φιλοσοφία της είναι το αίτημα της ελευθερίας",
-  icon: Zap
+  icon: HandMetal
 }, {
   title: "Pilates",
   description: "Το «Pilates» έκανε την εμφάνισή του στα μέσα περίπου του 20ου αιώνα ως μέθοδος αποθεραπείας και ανάρρωσης αθλητών που είχαν τραυματιστεί. O συνδυασμός σωματικής ενδυνάμωσης και πνευματικής άσκησης έκανε τη μέθοδο να διαδοθεί πολύ γρήγορα. Σήμερα είναι μία από τις πιο δημοφιλείς και διαδεδομένες μεθόδους γυμναστικής, κυρίως γιατί έχει άμεσα αποτελέσματα. Ο στόχος του Joseph Pilates ήταν 30 συνεδρίες για ένα καινούριο σώμα. «Μετά από δέκα συνεδρίες», έλεγε «θα παρατηρήσετε μια αλλαγή στο σώμα σας. Μετά από είκοσι, θα την δουν και οι άλλοι, και μετά από τριάντα, θα έχετε ένα ολοκαίνουριο σώμα»",
@@ -53,7 +53,7 @@ const Programs = () => {
   <Card className="hover:shadow-[var(--shadow-elevated)] hover:-translate-y-2 transition-all duration-300 bg-card border-border">
     <CardHeader>
       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-        <Users className="w-6 h-6 text-primary" />
+        <Dumbbell className="w-6 h-6 text-primary" />
       </div>
       <CardTitle className="text-xl text-card-foreground">Personal Training</CardTitle>
     </CardHeader>
