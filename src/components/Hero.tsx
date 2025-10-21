@@ -26,8 +26,9 @@ const Hero = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold">
-          Redemption<br /><br />Martial Arts
+        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold leading-tight">
+            <span>Redemption</span>
+            <span className="mt-1">Martial Arts</span>
         </h1>
 
         {/* Subtitle */}
