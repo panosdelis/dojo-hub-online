@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook, Users } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -144,7 +144,10 @@ const handleSubmit = async (e: React.FormEvent) => {
             
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle className="text-card-foreground">Social Media</CardTitle>
+                <CardTitle className="text-card-foreground">
+                  <Users className="w-5 h-5 text-primary" />
+                  Social Media
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex gap-4">
