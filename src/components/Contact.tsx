@@ -144,7 +144,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle className="text-card-foreground">
+                <CardTitle className="text-card-foreground flex items-center gap-2">
                   <Users className="w-5 h-5 text-primary" /> Social Media
                 </CardTitle>
               </CardHeader>
