@@ -149,7 +149,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <CardContent>
                 <div className="flex gap-4">
                   <a 
-                    href="https://www.instagram.com/redemption_martial_arts/" 
+                    href="https://www.instagram.com/redemption.actionclub/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:underline"
@@ -158,7 +158,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <span>Instagram</span>
                   </a>
                   <a 
-                    href="https://www.facebook.com/RedemptionMA/" 
+                    href="https://www.facebook.com/profile.php?id=100035441212035" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:underline"
