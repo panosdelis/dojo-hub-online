@@ -26,8 +26,8 @@ const Hero = () => {
         </div>
 
         {/* Title */}
-        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 font-bold leading-tight">
-          <span className="tracking-widest uppercase">Redemption</span>
+        <h1 className="font-blackops flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
+          <span className="tracking-[0.3em] uppercase text-[clamp(2.5rem,8vw,6rem)]">Redemption</span>
           <span className="mt-1">Martial Arts</span>
         </h1>
 
