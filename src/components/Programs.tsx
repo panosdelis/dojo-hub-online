@@ -49,7 +49,9 @@ const Programs = () => {
             </Card>)}
         </div>
 
-        <div className="mt-8 max-w-5xl mx-auto">
+        <div className="mt-8 max-w-5xl mx-auto"> {programs.map((program, index) => <Card key={index} className="hover:shadow-[var(--shadow-elevated)] transition-all duration-300 hover:-translate-y-2 bg-card border-border" style={{
+          animationDelay: `${index * 100}ms`
+        }}>
           <Card className="hover:shadow-[var(--shadow-elevated)] transition-all duration-300 bg-card border-border">
             <CardHeader>
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
