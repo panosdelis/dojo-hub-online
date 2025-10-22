@@ -37,16 +37,20 @@ const Hero = () => {
 
 
   
-  return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
+ return (
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-0">
       {/* Background gradient */}
-      <div className="absolute inset-0 z-0"
-        style={{background: "var(--gradient-hero)"}}
-        />
-      <h2 className="text-center text-2xl font-bold text-foreground mb-6">
-        Silhouettes
-      </h2>
-      <LogoRow logos={logos} size={80} />
+      <div
+        className="absolute inset-0 z-0"
+        style={{ background: "var(--gradient-hero)" }}
+      />
+
+      {/* Silhouettes row - sits above logo */}
+      <div className="z-10 mb-6 w-full px-4">
+        <LogoRow logos={logos} size={80} className="justify-center" />
+      </div>
+
+      {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
         {/* Logo */}
         <div className="flex items-center justify-center mb-4">
@@ -59,12 +63,12 @@ const Hero = () => {
         </div>
 
         {/* Title */}
-<h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
-  <span className="tracking-[0.25em] uppercase">
-    <strong>Redemption</strong>
-  </span>
-  <span className="mt-1">Martial Arts</span>
-</h1>
+        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
+          <span className="tracking-[0.25em] uppercase font-bold">
+            Redemption
+          </span>
+          <span className="mt-1">Martial Arts</span>
+        </h1>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
