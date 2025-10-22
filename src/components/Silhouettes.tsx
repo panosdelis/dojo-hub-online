@@ -8,20 +8,22 @@ interface Logo {
 interface LogoRowProps {
   logos: Logo[];
   size?: number;
-  speed?: number; // optional: controls scroll speed (default 30s)
+  speed?: number; // scroll speed (seconds)
+  reverse?: boolean; // optional direction
 }
 
-const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 30 }) => {
+const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse = false }) => {
+  const repeated = [...logos, ...logos, ...logos, ...logos]; // 4× repetition
+
   return (
-    <div className="overflow-hidden w-full">
+    <div className="w-screen overflow-hidden bg-transparent relative">
       <div
-        className="flex animate-scroll whitespace-nowrap"
+        className={`flex whitespace-nowrap animate-scroll ${reverse ? "animate-scroll-reverse" : ""}`}
         style={{
           animationDuration: `${speed}s`,
         }}
       >
-        {/* Duplicate the logos twice for seamless looping */}
-        {[...logos, ...logos].map((logo, index) => (
+        {repeated.map((logo, index) => (
           <img
             key={index}
             src={logo.src}
@@ -33,14 +35,21 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 30 }) => {
         ))}
       </div>
 
-      {/* Add animation keyframes */}
+      {/* Keyframes */}
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-25%); } /* 4× images = 25% movement per loop */
+        }
+        @keyframes scroll-reverse {
+          0% { transform: translateX(-25%); }
+          100% { transform: translateX(0); }
         }
         .animate-scroll {
           animation: scroll linear infinite;
+        }
+        .animate-scroll-reverse {
+          animation: scroll-reverse linear infinite;
         }
       `}</style>
     </div>
