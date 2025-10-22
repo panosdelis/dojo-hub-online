@@ -58,7 +58,7 @@ const Hero = () => {
 
        {/* Titles */}
       <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-2 leading-snug tracking-normal font-audiowide">
-        Redemption
+        R E D E M P T I O N
       </h1>
       <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-4 leading-snug font-audiowide">
         Martial Arts
