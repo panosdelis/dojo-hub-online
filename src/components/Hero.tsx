@@ -54,10 +54,10 @@ const Hero = () => {
         </div>
 
         {/* Titles */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-2 leading-tight tracking-[0.25em] uppercase font-bold">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-2 leading-tight tracking-[0.25em] uppercase font-blackops">
           Redemption
         </h1>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight font-blackops">
           Martial Arts
         </h1>
 
