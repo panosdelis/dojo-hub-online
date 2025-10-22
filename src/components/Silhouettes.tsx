@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import './image.css';
 
 interface Logo {
   src: string;
