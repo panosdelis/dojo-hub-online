@@ -38,10 +38,12 @@ const Hero = () => {
       />
 
       {/* Top Silhouettes row */}
-      <div className="w-full overflow-hidden">
+      
+      {/* <div className="w-full overflow-hidden">
         <LogoRow logos={logos} size={80} speed={40} />
       </div>
-
+      */}
+      
       {/* Content */}
       <div className="w-full relative z-10 text-center animate-fade-in-up px-4">
         {/* Logo */}
