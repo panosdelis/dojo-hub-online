@@ -63,7 +63,7 @@ const Hero = () => {
             Redemption
           </span>
         </h1>
-        <h1>
+        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
           <span className="mt-1">Martial Arts</span>
         </h1>
 
