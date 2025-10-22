@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import LogoRow from "@/components/Silhouettes";
 
-
 import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
 import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
 import fighter3 from "@/assets/silhouettes/Copilot_20251022_022811_20.png";
@@ -12,13 +11,7 @@ import fighter6 from "@/assets/silhouettes/Copilot_20251022_032214_20.png";
 import fighter7 from "@/assets/silhouettes/Copilot_20251022_032325_20.png";
 import fighter8 from "@/assets/silhouettes/Copilot_20251022_041813_20.png";
 
-
-
-
 const Hero = () => {
-
-
-  
   const logos = [
     { src: fighter1, alt: "Fighter 1" },
     { src: fighter2, alt: "Fighter 2" },
@@ -35,9 +28,7 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-
-  
- return (
+  return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-0 sm:pt-0">
       {/* Background gradient */}
       <div
@@ -45,13 +36,13 @@ const Hero = () => {
         style={{ background: "var(--gradient-hero)" }}
       />
 
-      {/* Silhouettes row - sits above logo */}
-      <div className="w-screen overflow-hidden">
-        <LogoRow logos={logos} size={80} />
+      {/* Top Silhouettes row */}
+      <div className="w-full overflow-hidden">
+        <LogoRow logos={logos} size={80} speed={40} />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
+      <div className="w-full relative z-10 text-center animate-fade-in-up px-4">
         {/* Logo */}
         <div className="flex items-center justify-center mb-4">
           <img
@@ -62,15 +53,12 @@ const Hero = () => {
           />
         </div>
 
-        {/* Title */}
-        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
-          <span className="tracking-[0.25em] uppercase font-bold">
-            Redemption
-          </span>
+        {/* Titles */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-2 leading-tight tracking-[0.25em] uppercase font-bold">
+          Redemption
         </h1>
-        
-        <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
-          <span className="mt-1">Martial Arts</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
+          Martial Arts
         </h1>
 
         {/* Subtitle */}
@@ -78,17 +66,13 @@ const Hero = () => {
           Danger is Real, But Fear is A Choice
         </p>
 
-          {/* Bottom row (mirrored/reverse direction) */}
-         <div className="w-screen overflow-hidden">
-          <LogoRow logos={logos} size={80} speed={40} reverse className="mt-4" />
+        {/* Bottom Silhouettes row (mirrored) */}
+        <div className="w-full overflow-hidden mt-4">
+          <LogoRow logos={logos} size={80} speed={40} reverse />
         </div>
 
-
-
-        
-        
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
           <Button
             variant="hero"
             size="lg"
