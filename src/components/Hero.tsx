@@ -3,11 +3,23 @@ import logo from "@/assets/logo.png";
 import LogoRow from "@/components/Silhouettes";
 
 const Hero = () => {
+
+
+  
+    const logos = [
+    { src: "/images/logo1.png", alt: "Brand 1" },
+    { src: "/images/logo2.png", alt: "Brand 2" },
+    { src: "/images/logo3.png", alt: "Brand 3" },
+    { src: "/images/logo4.png", alt: "Brand 4" },
+  ];
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+
+  
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
       {/* Background gradient */}
