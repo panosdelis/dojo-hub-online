@@ -14,14 +14,14 @@ interface LogoRowProps {
 const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, className }) => {
   return (
     <div
-      className={`flex flex-wrap items-center justify-center gap-6 animate-fade-in-up ${className || ""}`}
+      className={`flex flex-nowrap items-center justify-center gap-6 overflow-x-auto sm:overflow-visible scrollbar-hide animate-fade-in-up ${className || ""}`}
     >
       {logos.map((logo, index) => (
         <img
           key={index}
           src={logo.src}
           alt={logo.alt || `Logo ${index + 1}`}
-          className={`object-contain grayscale hover:grayscale-0 transition duration-300`}
+          className="object-contain grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
           style={{ width: size, height: size }}
           loading="lazy"
         />
