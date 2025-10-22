@@ -13,7 +13,7 @@ interface LogoRowProps {
 }
 
 const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse = false }) => {
-  const repeated = [...logos, ...logos, ...logos, ...logos]; // 4× repetition
+  const repeated = [...logos, ...logos, ...logos, ...logos]; // 4× repetition for seamless looping
 
   return (
     <div className="w-screen overflow-hidden bg-transparent relative">
@@ -35,7 +35,7 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse
         ))}
       </div>
 
-      {/* Keyframes */}
+      {/* Animations + hover polish */}
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
@@ -50,6 +50,18 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse
         }
         .animate-scroll-reverse {
           animation: scroll-reverse linear infinite;
+        }
+
+        /* ✅ Optional polish: pause animation on hover */
+        .animate-scroll:hover,
+        .animate-scroll-reverse:hover {
+          animation-play-state: paused;
+        }
+
+        /* ✅ Smooth animation fix on some browsers */
+        .animate-scroll,
+        .animate-scroll-reverse {
+          will-change: transform;
         }
       `}</style>
     </div>
