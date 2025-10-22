@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
 
        {/* Titles */}
-      <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-2 leading-snug tracking-normal font-blackops">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-2 leading-snug tracking-normal font-wallpoet">
         REDEMPTION
       </h1>
       <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-wallpoet">
