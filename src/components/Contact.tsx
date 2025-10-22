@@ -200,7 +200,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
         </div>
       </div>
-       <div className="w-full overflow-hidden -mb-24 mt-4">
+       <div className="w-full overflow-hidden -mb-20 mt-4">
         <LogoRow logos={logos} size={80} speed={40} />
       </div>
     </section>
