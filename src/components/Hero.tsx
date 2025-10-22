@@ -78,6 +78,11 @@ const Hero = () => {
           Danger is Real, But Fear is A Choice
         </p>
 
+          {/* Bottom row (mirrored/reverse direction) */}
+        <div>
+          <LogoRow logos={logos} size={80} speed={40} reverse className="mt-4" />
+        </div>
+        
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
