@@ -57,10 +57,10 @@ const Hero = () => {
         </div>
 
        {/* Titles */}
-      <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-2 leading-snug tracking-normal font-wallpoet">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-0 leading-snug tracking-normal font-blackops">
         REDEMPTION
       </h1>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-wallpoet">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-blackops">
         Martial Arts & more
       </h1>
         {/* Subtitle */}
