@@ -16,7 +16,7 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse
   const repeated = [...logos, ...logos, ...logos, ...logos]; // 4× repetition for seamless looping
 
   return (
-    <div className="w-screen overflow-hidden bg-transparent relative">
+    <div className="relative w-full overflow-hidden">
       <div
         className={`flex whitespace-nowrap animate-scroll ${reverse ? "animate-scroll-reverse" : ""}`}
         style={{
