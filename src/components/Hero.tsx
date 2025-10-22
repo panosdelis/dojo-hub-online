@@ -60,12 +60,9 @@ const Hero = () => {
       <h1 className="text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-2 leading-snug tracking-normal font-blackops">
         REDEMPTION
       </h1>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-audiowide">
-        Martial Arts
+      <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-wallpoet">
+        Martial Arts & more
       </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 leading-snug font-audiowide">
-        & more
-        </h1>
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
           Danger is Real, But Fear is A Choice
