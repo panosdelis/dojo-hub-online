@@ -16,8 +16,6 @@ const Hero = () => {
   const logos = [
     { src: fighter1, alt: "Fighter 1" },
     { src: fighter2, alt: "Fighter 2" },
-    { src: fighter3, alt: "Fighter 3" },
-    { src: fighter4, alt: "Fighter 4" },
   ];
 
   const scrollToSection = (id: string) => {
