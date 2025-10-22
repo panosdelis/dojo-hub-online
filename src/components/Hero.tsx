@@ -46,8 +46,8 @@ const Hero = () => {
       />
 
       {/* Silhouettes row - sits above logo */}
-      <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible w-screen ">
-        <LogoRow logos={logos} size={80} className="justify-center" />
+      <div className="w-screen overflow-hidden">
+        <LogoRow logos={logos} size={80} />
       </div>
 
       {/* Content */}
@@ -79,9 +79,13 @@ const Hero = () => {
         </p>
 
           {/* Bottom row (mirrored/reverse direction) */}
-         <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible w-screen ">
+         <div className="w-screen overflow-hidden">
           <LogoRow logos={logos} size={80} speed={40} reverse className="mt-4" />
         </div>
+
+
+
+        
         
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
