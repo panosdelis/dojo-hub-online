@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
+import LogoRow from "@/components/Silhouettes";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
