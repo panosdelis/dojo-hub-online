@@ -63,6 +63,12 @@ const Hero = () => {
             Redemption
           </span>
         </h1>
+        
+      {/* Silhouettes row - sits above logo */}
+      <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible">
+        <LogoRow logos={logos} size={80} className="justify-center" />
+      </div>
+        
         <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
           <span className="mt-1">Martial Arts</span>
         </h1>
