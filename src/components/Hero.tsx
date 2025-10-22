@@ -45,6 +45,11 @@ const Hero = () => {
         style={{ background: "var(--gradient-hero)" }}
       />
 
+      {/* Silhouettes row - sits above logo */}
+      <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible">
+        <LogoRow logos={logos} size={80} className="justify-center" />
+      </div>
+
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
         {/* Logo */}
@@ -67,11 +72,6 @@ const Hero = () => {
         <h1 className="flex flex-col text-4xl md:text-6xl lg:text-7xl text-primary-foreground mb-4 leading-tight">
           <span className="mt-1">Martial Arts</span>
         </h1>
-
-         {/* Silhouettes row - sits above logo */}
-      <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible">
-        <LogoRow logos={logos} size={80} className="justify-center" />
-      </div>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto font-bold">
