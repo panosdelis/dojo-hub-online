@@ -1,1 +1,13 @@
+/* Make all images unclickable and undraggable */
+img {
+  pointer-events: none;   /* disables clicks and hovers */
+  user-select: none;      /* prevents text/image selection */
+  -webkit-user-drag: none; /* prevents dragging in Safari/Chrome */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 
+/* Optional: prevent right-click on images */
+img {
+  -webkit-touch-callout: none; /* disables long-press save on mobile Safari */
+}
