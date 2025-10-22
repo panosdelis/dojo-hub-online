@@ -7,27 +7,34 @@ interface Logo {
 
 interface LogoRowProps {
   logos: Logo[];
-  size?: number;
+  size?: number; // image size in px
   speed?: number; // seconds per full scroll
   reverse?: boolean;
 }
 
-const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse = false }) => {
+const LogoRow: React.FC<LogoRowProps> = ({
+  logos,
+  size = 64,
+  speed = 80, // slower default
+  reverse = false,
+}) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [repeatCount, setRepeatCount] = useState(4);
-  const [distance, setDistance] = useState(0); // in px
+  const [distance, setDistance] = useState(0);
 
   useEffect(() => {
     const updateRepeatCount = () => {
       if (!containerRef.current) return;
 
       const containerWidth = containerRef.current.offsetWidth;
-      const logoWidth = size + 16; // size + mx-4
-      const neededRepeats = Math.ceil((containerWidth * 2) / (logos.length * logoWidth));
+      const logoWidth = size + 16; // 16px margin (mx-4)
+      
+      // repeat enough times to cover container + one full sequence
+      const neededRepeats = Math.ceil((containerWidth + logos.length * logoWidth) / (logos.length * logoWidth));
       setRepeatCount(neededRepeats);
 
-      // total width of one loop of logos
-      setDistance(logos.length * logoWidth * neededRepeats / 2); // half-loop for seamless scroll
+      // distance = width of one sequence
+      setDistance(logos.length * logoWidth);
     };
 
     updateRepeatCount();
