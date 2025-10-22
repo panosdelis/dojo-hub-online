@@ -5,6 +5,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+import './image.css';
+
 import training1 from "@/assets/training1.jpg";
 import training2 from "@/assets/training2.jpg";
 import training3 from "@/assets/training3.jpg";
