@@ -79,7 +79,7 @@ const Hero = () => {
         </p>
 
           {/* Bottom row (mirrored/reverse direction) */}
-        <div>
+         <div className="flex flex-nowrap justify-center items-center gap-4 overflow-x-auto sm:overflow-visible">
           <LogoRow logos={logos} size={80} speed={40} reverse className="mt-4" />
         </div>
         
