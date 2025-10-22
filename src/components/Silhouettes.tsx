@@ -39,11 +39,11 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-25%); } /* 4× images = 25% movement per loop */
+          100% { transform: translateX(-25%); } /* forward */
         }
         @keyframes scroll-reverse {
-          0% { transform: translateX(-25%); }
-          100% { transform: translateX(0); }
+          0% { transform: translateX(-75%); } /* start fully off-screen right */
+          100% { transform: translateX(0); }  /* scroll into view */
         }
         .animate-scroll {
           animation: scroll linear infinite;
@@ -52,13 +52,13 @@ const LogoRow: React.FC<LogoRowProps> = ({ logos, size = 64, speed = 40, reverse
           animation: scroll-reverse linear infinite;
         }
 
-        /* ✅ Optional polish: pause animation on hover */
+        /* Pause animation on hover */
         .animate-scroll:hover,
         .animate-scroll-reverse:hover {
           animation-play-state: paused;
         }
 
-        /* ✅ Smooth animation fix on some browsers */
+        /* Smooth animation optimization */
         .animate-scroll,
         .animate-scroll-reverse {
           will-change: transform;
