@@ -11,6 +11,7 @@ import fighter5 from "@/assets/silhouettes/Copilot_20251022_032058_20.png";
 import fighter6 from "@/assets/silhouettes/Copilot_20251022_032214_20.png";
 import fighter7 from "@/assets/silhouettes/Copilot_20251022_032325_20.png";
 import fighter8 from "@/assets/silhouettes/Copilot_20251022_041813_20.png";
+import fighter9 from "@/assets/silhouettes/Copilot_20251022_022530_1_20.png";
 
 const Hero = () => {
   const logos = [
@@ -22,6 +23,7 @@ const Hero = () => {
     { src: fighter6, alt: "Fighter 6" },
     { src: fighter7, alt: "Fighter 7" },
     { src: fighter8, alt: "Fighter 8" },
+    { src: fighter8, alt: "Fighter 9" },
   ];
 
   const scrollToSection = (id: string) => {
