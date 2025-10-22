@@ -2,17 +2,24 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import LogoRow from "@/components/Silhouettes";
 
+
+import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
+import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
+
+
+
+
 const Hero = () => {
 
 
   
-    const logos = [
-    { src: "/images/logo1.png", alt: "Brand 1" },
-    { src: "/images/logo2.png", alt: "Brand 2" },
-    { src: "/images/logo3.png", alt: "Brand 3" },
-    { src: "/images/logo4.png", alt: "Brand 4" },
+  const logos = [
+    { src: fighter1, alt: "Fighter 1" },
+    { src: fighter2, alt: "Fighter 2" },
+    { src: fighter3, alt: "Fighter 3" },
+    { src: fighter4, alt: "Fighter 4" },
   ];
-  
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +33,10 @@ const Hero = () => {
       <div className="absolute inset-0 z-0"
         style={{background: "var(--gradient-hero)"}}
         />
-
+      <h2 className="text-center text-2xl font-bold text-foreground mb-6">
+        Silhouettes
+      </h2>
+      <LogoRow logos={logos} size={80} />
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
         {/* Logo */}
         <div className="flex items-center justify-center mb-4">
