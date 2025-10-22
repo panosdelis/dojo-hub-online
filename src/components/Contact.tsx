@@ -6,6 +6,18 @@ import { Mail, Phone, MapPin, Instagram, Facebook, Users } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
+import LogoRow from "@/components/Silhouettes";
+
+import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
+import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
+import fighter3 from "@/assets/silhouettes/Copilot_20251022_022811_20.png";
+import fighter4 from "@/assets/silhouettes/Copilot_20251022_024923_20.png";
+import fighter5 from "@/assets/silhouettes/Copilot_20251022_032058_20.png";
+import fighter6 from "@/assets/silhouettes/Copilot_20251022_032214_20.png";
+import fighter7 from "@/assets/silhouettes/Copilot_20251022_032325_20.png";
+import fighter8 from "@/assets/silhouettes/Copilot_20251022_041813_20.png";
+import fighter9 from "@/assets/silhouettes/Copilot_20251022_022530_1_20.png";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -174,6 +186,9 @@ const handleSubmit = async (e: React.FormEvent) => {
             
           </div>
         </div>
+      </div>
+       <div className="w-full overflow-hidden">
+        <LogoRow logos={logos} size={80} speed={40} />
       </div>
     </section>
   );
