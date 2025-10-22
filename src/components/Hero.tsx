@@ -23,7 +23,7 @@ const Hero = () => {
     { src: fighter6, alt: "Fighter 6" },
     { src: fighter7, alt: "Fighter 7" },
     { src: fighter8, alt: "Fighter 8" },
-    { src: fighter8, alt: "Fighter 9" },
+    { src: fighter9, alt: "Fighter 9" },
   ];
 
   const scrollToSection = (id: string) => {
