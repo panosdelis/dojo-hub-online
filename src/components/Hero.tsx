@@ -45,11 +45,6 @@ const Hero = () => {
         style={{ background: "var(--gradient-hero)" }}
       />
 
-      {/* Silhouettes row - sits above logo */}
-      <div className="z-10 mb-6 w-full px-4">
-        <LogoRow logos={logos} size={80} className="justify-center" />
-      </div>
-
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in-up">
         {/* Logo */}
@@ -67,6 +62,8 @@ const Hero = () => {
           <span className="tracking-[0.25em] uppercase font-bold">
             Redemption
           </span>
+        </h1>
+        <h1>
           <span className="mt-1">Martial Arts</span>
         </h1>
 
