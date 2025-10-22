@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import LogoRow from "@/components/Silhouettes";
-import "../App.css";
+import "../assets/fonts/fonts.css";
 
 import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
 import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
