@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-0 sm:pt-0">
+    <section className="relative -mt-6 min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-0 sm:pt-0">
       {/* Background gradient */}
       <div
         className="absolute inset-0 z-0"
