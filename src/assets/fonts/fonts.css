@@ -1,3 +1,4 @@
+/* Black Ops One */
 @font-face {
   font-family: "BlackOps";
   src: url("/src/assets/fonts/BlackOpsOne-Regular.ttf") format("truetype");
@@ -5,6 +6,41 @@
   font-style: normal;
 }
 
-.font-blackops {
-  font-family: "BlackOps", sans-serif;
+/* Aldrich */
+@font-face {
+  font-family: "Aldrich";
+  src: url("/src/assets/fonts/Aldrich-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
+
+/* Angkor */
+@font-face {
+  font-family: "Angkor";
+  src: url("/src/assets/fonts/Angkor-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Audiowide */
+@font-face {
+  font-family: "Audiowide";
+  src: url("/src/assets/fonts/Audiowide-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Wallpoet */
+@font-face {
+  font-family: "Wallpoet";
+  src: url("/src/assets/fonts/Wallpoet-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional: helper classes */
+.font-blackops { font-family: "BlackOps", sans-serif; }
+.font-aldrich { font-family: "Aldrich", sans-serif; }
+.font-angkor { font-family: "Angkor", sans-serif; }
+.font-audiowide { font-family: "Audiowide", sans-serif; }
+.font-wallpoet { font-family: "Wallpoet", sans-serif; }
