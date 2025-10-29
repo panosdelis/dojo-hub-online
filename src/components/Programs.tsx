@@ -30,7 +30,7 @@ const Programs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Προγράμματα και Παροχές</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Βρες αυτό που σου ταιρίαζει και  γίνε η καλυτερη εκδοχή του εαυτού σου.</p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Βρες αυτό που σου ταιρίαζει και γίνε η καλύτερη εκδοχή του εαυτού σου.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
