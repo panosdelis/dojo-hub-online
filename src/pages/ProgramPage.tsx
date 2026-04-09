@@ -112,7 +112,11 @@ const ProgramPage = () => {
         </div>
       </header>
 
-      {/* Program Content */}
+      {/* Silhouettes carousel */}
+      <div className="w-full overflow-hidden bg-secondary/50 py-2">
+        <LogoRow logos={silhouettes} size={60} speed={40} />
+      </div>
+
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
