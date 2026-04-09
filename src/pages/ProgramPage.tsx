@@ -1,8 +1,10 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { programs } from "@/data/programs";
 import logo from "@/assets/logo.png";
-import { Home } from "lucide-react";
+import { Home, Mail, Phone, Instagram, Facebook, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import "@/assets/fonts/fonts.css";
 
 import {
@@ -40,6 +42,10 @@ const ProgramPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const program = programs.find((p) => p.slug === slug);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   if (!program) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
@@ -57,8 +63,11 @@ const ProgramPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Top Bar */}
-      <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
+      {/* Top Bar with hero gradient */}
+      <header
+        className="sticky top-0 z-50 border-b border-primary/20"
+        style={{ background: "var(--gradient-hero)" }}
+      >
         <div className="container mx-auto px-4 flex items-center gap-4 h-16">
           <Link to="/" className="flex-shrink-0">
             <img
@@ -68,14 +77,14 @@ const ProgramPage = () => {
             />
           </Link>
           <Link to="/">
-            <Button variant="ghost" size="sm" className="gap-2">
+            <Button variant="ghost" size="sm" className="gap-2 text-primary-foreground hover:bg-primary/20">
               <Home className="w-4 h-4" />
               <span className="hidden sm:inline">Αρχική</span>
             </Button>
           </Link>
           <div className="flex items-baseline gap-1.5 ml-2">
-            <span className="text-lg font-blackops text-foreground leading-none">REDEMPTION</span>
-            <span className="text-sm font-blackops text-muted-foreground leading-none">Martial Arts & more</span>
+            <span className="text-lg font-blackops text-primary-foreground leading-none">REDEMPTION</span>
+            <span className="text-sm font-blackops text-primary-foreground/70 leading-none">Martial Arts & more</span>
           </div>
         </div>
       </header>
@@ -97,7 +106,7 @@ const ProgramPage = () => {
         <Carousel
           opts={{ align: "start", loop: true }}
           plugins={[Autoplay({ delay: 4000 })]}
-          className="w-full"
+          className="w-full mb-16"
         >
           <CarouselContent>
             {photos.map((photo, index) => (
@@ -115,6 +124,73 @@ const ProgramPage = () => {
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
+
+        {/* Contact Info Section */}
+        <div className="space-y-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Επικοινωνήστε μαζί μας
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground flex items-center gap-2">
+                  <Mail className="w-5 h-5 text-primary" />
+                  Email
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a href="mailto:anaktisi.redemption@gmail.com" className="text-primary font-semibold hover:underline text-sm">
+                  anaktisi.redemption@gmail.com
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground flex items-center gap-2">
+                  <Phone className="w-5 h-5 text-primary" />
+                  Καλέστε μας
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a href="tel:+306972033728" className="text-primary font-semibold hover:underline">
+                  697 2033728
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-card-foreground flex items-center gap-2">
+                  <Users className="w-5 h-5 text-primary" /> Social Media
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex gap-4">
+                  <a
+                    href="https://www.instagram.com/redemption.actionclub/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:underline"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    <span><strong>Instagram</strong></span>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100035441212035"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:underline"
+                  >
+                    <Facebook className="w-5 h-5" />
+                    <span><strong>Facebook</strong></span>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </main>
     </div>
   );
