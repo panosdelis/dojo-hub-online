@@ -96,7 +96,7 @@ const ProgramPage = () => {
             <img
               src={logo}
               alt="Redemption Martial Arts logo"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain drop-shadow-[0_0_8px_hsl(45,95%,55%)]"
             />
           </Link>
           <Link to="/">
