@@ -4,6 +4,17 @@ import { programs } from "@/data/programs";
 import logo from "@/assets/logo.png";
 import { Home, Mail, Phone, Instagram, Facebook, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LogoRow from "@/components/Silhouettes";
+
+import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
+import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
+import fighter3 from "@/assets/silhouettes/Copilot_20251022_022811_20.png";
+import fighter4 from "@/assets/silhouettes/Copilot_20251022_024923_20.png";
+import fighter5 from "@/assets/silhouettes/Copilot_20251022_032058_20.png";
+import fighter6 from "@/assets/silhouettes/Copilot_20251022_032214_20.png";
+import fighter7 from "@/assets/silhouettes/Copilot_20251022_032325_20.png";
+import fighter8 from "@/assets/silhouettes/Copilot_20251022_041813_20.png";
+import fighter9 from "@/assets/silhouettes/Copilot_20251022_022530_1_20.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import "@/assets/fonts/fonts.css";
 
