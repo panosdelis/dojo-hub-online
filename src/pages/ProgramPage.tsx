@@ -49,6 +49,18 @@ const photos = [
   { src: img9, alt: "Training photo 9" },
 ];
 
+const silhouettes = [
+  { src: fighter1, alt: "Fighter 1" },
+  { src: fighter2, alt: "Fighter 2" },
+  { src: fighter3, alt: "Fighter 3" },
+  { src: fighter4, alt: "Fighter 4" },
+  { src: fighter5, alt: "Fighter 5" },
+  { src: fighter6, alt: "Fighter 6" },
+  { src: fighter7, alt: "Fighter 7" },
+  { src: fighter8, alt: "Fighter 8" },
+  { src: fighter9, alt: "Fighter 9" },
+];
+
 const ProgramPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const program = programs.find((p) => p.slug === slug);
