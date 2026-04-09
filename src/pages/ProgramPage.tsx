@@ -4,6 +4,17 @@ import { programs } from "@/data/programs";
 import logo from "@/assets/logo.png";
 import { Home, Mail, Phone, Instagram, Facebook, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LogoRow from "@/components/Silhouettes";
+
+import fighter1 from "@/assets/silhouettes/Copilot_20251022_022201_20.png";
+import fighter2 from "@/assets/silhouettes/Copilot_20251022_022530_20.png";
+import fighter3 from "@/assets/silhouettes/Copilot_20251022_022811_20.png";
+import fighter4 from "@/assets/silhouettes/Copilot_20251022_024923_20.png";
+import fighter5 from "@/assets/silhouettes/Copilot_20251022_032058_20.png";
+import fighter6 from "@/assets/silhouettes/Copilot_20251022_032214_20.png";
+import fighter7 from "@/assets/silhouettes/Copilot_20251022_032325_20.png";
+import fighter8 from "@/assets/silhouettes/Copilot_20251022_041813_20.png";
+import fighter9 from "@/assets/silhouettes/Copilot_20251022_022530_1_20.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import "@/assets/fonts/fonts.css";
 
@@ -36,6 +47,18 @@ const photos = [
   { src: img7, alt: "Training photo 7" },
   { src: img8, alt: "Training photo 8" },
   { src: img9, alt: "Training photo 9" },
+];
+
+const silhouettes = [
+  { src: fighter1, alt: "Fighter 1" },
+  { src: fighter2, alt: "Fighter 2" },
+  { src: fighter3, alt: "Fighter 3" },
+  { src: fighter4, alt: "Fighter 4" },
+  { src: fighter5, alt: "Fighter 5" },
+  { src: fighter6, alt: "Fighter 6" },
+  { src: fighter7, alt: "Fighter 7" },
+  { src: fighter8, alt: "Fighter 8" },
+  { src: fighter9, alt: "Fighter 9" },
 ];
 
 const ProgramPage = () => {
@@ -73,7 +96,7 @@ const ProgramPage = () => {
             <img
               src={logo}
               alt="Redemption Martial Arts logo"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain drop-shadow-[0_0_8px_hsl(45,95%,55%)]"
             />
           </Link>
           <Link to="/">
@@ -89,7 +112,11 @@ const ProgramPage = () => {
         </div>
       </header>
 
-      {/* Program Content */}
+      {/* Silhouettes carousel */}
+      <div className="w-full overflow-hidden bg-secondary/50 py-2">
+        <LogoRow logos={silhouettes} size={60} speed={40} />
+      </div>
+
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
