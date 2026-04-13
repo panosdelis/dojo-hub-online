@@ -29,7 +29,7 @@ const Programs = () => {
                   <CardTitle className="text-xl text-card-foreground">{program.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-card-foreground/80">{program.description}</p>
+                  <p className="text-card-foreground/80">{program.shortDescription}</p>
                 </CardContent>
               </Card>
             </Link>
@@ -47,7 +47,7 @@ const Programs = () => {
                   <CardTitle className="text-xl text-card-foreground">{personalTraining.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-card-foreground/80">{personalTraining.description}</p>
+                  <p className="text-card-foreground/80">{personalTraining.shortDescription}</p>
                 </CardContent>
               </Card>
             </Link>
