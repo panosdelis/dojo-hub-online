@@ -93,11 +93,17 @@ const ProgramPage = () => {
       >
         <div className="container mx-auto px-4 flex items-center gap-4 h-16">
           <Link to="/" className="flex-shrink-0">
-            <img
-              src={logo}
-              alt="Redemption Martial Arts logo"
-              className="h-10 w-auto object-contain [filter:drop-shadow(3px_3px_0_black)_drop-shadow(-3px_-3px_0_black)]"
-            />
+          <div className="relative flex items-center justify-center">
+          {/* Black circle */}
+          <div className="absolute w-12 h-12 bg-black rounded-full"></div>
+
+          {/* Logo */}
+          <img
+          src={logo}
+          alt="Redemption Martial Arts logo"
+          className="h-10 w-auto object-contain relative z-10"
+          />
+          </div>
           </Link>
           <Link to="/">
             <Button variant="ghost" size="sm" className="gap-2 text-primary-foreground hover:bg-primary/20">
