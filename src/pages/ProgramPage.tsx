@@ -66,12 +66,23 @@ const selfDefencePhotos = [
   { src: img9, alt: "Self Defence training 1" },
 ];
 
+const personalTraining = [
+  { src: img9, alt: "personalTraining" },
+];
+
+const fcsKali = [
+  { src: img9, alt: "fcsKali" },
+];
+
+
 const programPhotos: Record<string, { src: string; alt: string }[]> = {
   mma: mmaPhotos,
   capoeira: capoeiraPhotos,
   pilates: pilatesPhotos,
   "fight-for-fitness": fitnessPhotos,
   "full-combat-self-defence": selfDefencePhotos,
+  "personal-training": personalTraining,
+  "fcs-kali": fcsKali,
 };
 
 // ========================
