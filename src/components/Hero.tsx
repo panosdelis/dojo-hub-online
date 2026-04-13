@@ -50,7 +50,7 @@ const Hero = () => {
       {/* Content */}
       <div className="w-full relative z-10 text-center animate-fade-in-up px-4">
         {/* Logo */}
-        <div className="flex items-center justify-center mb-4">
+        <div className="flex items-center justify-center mb-4 pt-6 md:pt-10">
           <img
             src={logo}
             alt="Redemption Martial Arts Academy logo"
