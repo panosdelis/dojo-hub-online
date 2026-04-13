@@ -37,17 +37,50 @@ import img7 from "@/assets/1760879501371.jpg";
 import img8 from "@/assets/1760879501406.jpg";
 import img9 from "@/assets/1760879501451.jpg";
 
-const photos = [
-  { src: img1, alt: "Training photo 1" },
-  { src: img2, alt: "Training photo 2" },
-  { src: img3, alt: "Training photo 3" },
-  { src: img4, alt: "Training photo 4" },
-  { src: img5, alt: "Training photo 5" },
-  { src: img6, alt: "Training photo 6" },
-  { src: img7, alt: "Training photo 7" },
-  { src: img8, alt: "Training photo 8" },
-  { src: img9, alt: "Training photo 9" },
+const mmaPhotos = [
+  { src: img1, alt: "MMA training 1" },
+  { src: img2, alt: "MMA training 2" },
 ];
+
+const capoeiraPhotos = [
+  { src: img3, alt: "Capoeira training 1" },
+  { src: img4, alt: "Capoeira training 2" },
+];
+
+const pilatesPhotos = [
+  { src: img5, alt: "Pilates training 1" },
+  { src: img6, alt: "Pilates training 2" },
+];
+
+const fitnessPhotos = [
+  { src: img7, alt: "Fight for Fitness training 1" },
+  { src: img8, alt: "Fight for Fitness training 2" },
+];
+
+const selfDefencePhotos = [
+  { src: img9, alt: "Self Defence training 1" },
+];
+
+const programPhotos: Record<string, { src: string; alt: string }[]> = {
+  mma: mmaPhotos,
+  capoeira: capoeiraPhotos,
+  pilates: pilatesPhotos,
+  "fight-for-fitness": fitnessPhotos,
+  "full-combat-self-defence": selfDefencePhotos,
+};
+
+const photos = programPhotos[slug ?? ""] || [];
+// const photos = [
+//   { src: img1, alt: "Training photo 1" },
+//   { src: img2, alt: "Training photo 2" },
+//   { src: img3, alt: "Training photo 3" },
+//   { src: img4, alt: "Training photo 4" },
+//   { src: img5, alt: "Training photo 5" },
+//   { src: img6, alt: "Training photo 6" },
+//   { src: img7, alt: "Training photo 7" },
+//   { src: img8, alt: "Training photo 8" },
+//   { src: img9, alt: "Training photo 9" },
+// ];
 
 const silhouettes = [
   { src: fighter1, alt: "Fighter 1" },
