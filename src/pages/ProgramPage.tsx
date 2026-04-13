@@ -95,7 +95,7 @@ const ProgramPage = () => {
           <Link to="/" className="flex-shrink-0">
           <div className="relative flex items-center justify-center">
           {/* Black circle */}
-          <div className="absolute w-12 h-12 bg-black rounded-full"></div>
+          <div className="absolute w-10 h-10 bg-black rounded-full"></div>
 
           {/* Logo */}
           <img
